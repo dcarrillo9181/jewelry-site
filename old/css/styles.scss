@@ -1,0 +1,222 @@
+$color-primary: #ae9cb9;
+$color-secondary: #d6cddb;
+$color-headers: #524275;
+$color-header2: #2e076d;
+$color-button: #a686b9;
+$color-button-text: #d9d4ec;
+$color-button-hover: #c59ec9;
+$color-hover: rgb(182, 86, 150);
+$color-border: #6a637a85;
+
+$body-font: "Raleway", sans-serif;
+$small-headers-font: "Roboto Condensed", sans-serif;
+$header-font: "Dancing Script", sans-serif;
+
+
+body {
+    font-family: $body-font;
+    font-weight: 400;
+    background: #f7f7f7;
+}
+
+h1 {
+    font-family: $header-font;
+    font-size: 4em;
+    margin-top: 10px;
+}
+
+h2, h3 {
+    font-family: $small-headers-font;
+    color: $color-headers;
+    font-weight: bold;
+}
+
+.content-title {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+    letter-spacing: 8px;
+}
+
+.content-title::after {
+    content: "";
+    margin: 0 auto;
+    margin-top: 1rem;
+    display: block;
+    width: 10%;
+    height: 1px;
+    background-color: $color-headers;
+}
+
+header h1 {
+    color: black;
+}
+
+.faq, header h2 {
+    color: $color-header2;
+}
+
+.site-footer{
+    padding: 20px 0;
+}
+
+.jumbotron {
+    margin: 0;
+    padding: 30px;
+    //background-color: #e3d9ec;
+    //background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='52' height='52' viewBox='0 0 52 52'%3E%3Cpath fill='%239283aa' fill-opacity='0.31' d='M0 17.83V0h17.83a3 3 0 0 1-5.66 2H5.9A5 5 0 0 1 2 5.9v6.27a3 3 0 0 1-2 5.66zm0 18.34a3 3 0 0 1 2 5.66v6.27A5 5 0 0 1 5.9 52h6.27a3 3 0 0 1 5.66 0H0V36.17zM36.17 52a3 3 0 0 1 5.66 0h6.27a5 5 0 0 1 3.9-3.9v-6.27a3 3 0 0 1 0-5.66V52H36.17zM0 31.93v-9.78a5 5 0 0 1 3.8.72l4.43-4.43a3 3 0 1 1 1.42 1.41L5.2 24.28a5 5 0 0 1 0 5.52l4.44 4.43a3 3 0 1 1-1.42 1.42L3.8 31.2a5 5 0 0 1-3.8.72zm52-14.1a3 3 0 0 1 0-5.66V5.9A5 5 0 0 1 48.1 2h-6.27a3 3 0 0 1-5.66-2H52v17.83zm0 14.1a4.97 4.97 0 0 1-1.72-.72l-4.43 4.44a3 3 0 1 1-1.41-1.42l4.43-4.43a5 5 0 0 1 0-5.52l-4.43-4.43a3 3 0 1 1 1.41-1.41l4.43 4.43c.53-.35 1.12-.6 1.72-.72v9.78zM22.15 0h9.78a5 5 0 0 1-.72 3.8l4.44 4.43a3 3 0 1 1-1.42 1.42L29.8 5.2a5 5 0 0 1-5.52 0l-4.43 4.44a3 3 0 1 1-1.41-1.42l4.43-4.43a5 5 0 0 1-.72-3.8zm0 52c.13-.6.37-1.19.72-1.72l-4.43-4.43a3 3 0 1 1 1.41-1.41l4.43 4.43a5 5 0 0 1 5.52 0l4.43-4.43a3 3 0 1 1 1.42 1.41l-4.44 4.43c.36.53.6 1.12.72 1.72h-9.78zm9.75-24a5 5 0 0 1-3.9 3.9v6.27a3 3 0 1 1-2 0V31.9a5 5 0 0 1-3.9-3.9h-6.27a3 3 0 1 1 0-2h6.27a5 5 0 0 1 3.9-3.9v-6.27a3 3 0 1 1 2 0v6.27a5 5 0 0 1 3.9 3.9h6.27a3 3 0 1 1 0 2H31.9z'%3E%3C/path%3E%3C/svg%3E");
+    background-image: linear-gradient(to right, $color-primary, $color-secondary, $color-primary);
+    color: white;
+}
+
+.row-content {
+    padding: 50px 0;
+    min-height: 200px;
+    border-bottom: 1px solid $color-border;
+}
+
+.navbar {
+    color: $color-header2;
+    background-color: white;
+    box-shadow: 0px 2px 5px rgba(66, 55, 78, 0.39);
+}
+
+.navbar .social {
+    font-size: 1.5rem;
+    height: 2.5rem;
+    width: 2.5rem;
+    margin-left: 0.5rem;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px rgba(66, 55, 78, 0);
+}
+
+.navbar .social:hover {
+    box-shadow: 0px 0px 3px rgba(66, 55, 78, 0.75);
+    transition: box-shadow 0.15s;
+}
+
+@media all and (min-width: 992px) {
+	.navbar .nav-item .dropdown-menu{ display: none; }
+	.navbar .nav-item:hover .nav-link{   }
+	.navbar .nav-item:hover .dropdown-menu{ display: block; }
+	.navbar .nav-item .dropdown-menu{ margin-top:0; }
+}	
+
+.btn-clay-lite {
+    background-color: $color-button;
+    color: white;
+}
+
+.btn-clay-lite:hover {
+    color: white;
+    background-color: $color-button-hover;
+}
+
+a, a:hover {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .carousel-caption {
+      background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .carousel {
+      border: solid #2e076d;
+  }
+
+  button.text-nowrap.btn.btn-info.btn-lg {
+      border: 1px solid white;
+  }
+
+  img.img-fluid {
+      box-shadow: 8px 8px 8px #e4d8fd;
+  }
+
+  .card {
+      border: 1px solid $color-border;
+  }
+
+  .icons {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+  }
+
+  .social {
+      color: $color-header2;
+      background-color: transparent;
+      border-radius: 50%;
+      padding: 0;
+  }
+
+  .social:hover, .site-footer a:hover, .faq:hover {
+    color: $color-hover;
+    transition: color 0.25s;
+  }
+
+  .site-footer {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+
+  }
+
+  .site-footer h5 {
+      color: $color-header2;
+      font-weight: 400;
+      font-size: 0.9rem;
+      letter-spacing: 2px;
+  }
+
+  .site-footer li {
+    color: $color-header2;
+  }
+
+  .site-footer li, .site-footer a {
+      font-size: 0.9rem;
+      font-weight: 300;
+  }
+
+  .site-footer i {
+      width: 1.5rem;
+      margin-left: -4px;
+  }
+
+  .card-header {
+      box-shadow: 0px 2px 3px rgba(66, 55, 78, 0.39);
+  }
+
+  .btn-link {
+     letter-spacing: 1px;
+     font-weight: normal;
+  }
+
+  #about-image {
+      width: 100%;
+  }
+
+  #abt-img-wrapper {
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 1.0) 50%, transparent 100%);
+  }
+
+  @media (max-width: 767.98px) { 
+    #abt-img-wrapper {
+        mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1.0) 50%, transparent 100%);
+      }
+  }
+
+  #about-header {
+    font-size:calc(1rem + 2vw);
+    font-family: $header-font;
+    font-weight: lighter;
+  }
+
+  @media (min-width: 992px) { 
+    #about-desc {
+        padding-right: 20%;
+    }
+  }
+
+  .collections .card {
+    box-shadow: 0px 3px 5px rgba(66, 55, 78, 0.39);
+  }
