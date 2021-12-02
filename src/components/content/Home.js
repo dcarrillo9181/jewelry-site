@@ -5,8 +5,8 @@ import '../../styles.css';
 
 class Home extends Component {
     state = {
-        items: [
-            { id: 1, src: './img/aztec-hoop.jpg', title: "Aztec Hoops"},
+        images: [
+            { id: 1, src: './img/aztec-hoop.jpg', title: 'Aztec Hoops', description: 'bar'},
             { id: 2, title: 'item #2' },
             { id: 3, title: 'item #3' },
             { id: 4, title: 'item #4' },
@@ -18,7 +18,7 @@ class Home extends Component {
         const { items } = this.state;
         return (
             <Carousel>
-                { items.map(({id, src, title, description}) => <img key={id} src={src} title={title} alt={description} />)}
+                { images.map(({id, src, title, description}) => <img key={id} src={src} title={title} alt={description} />)}
             </Carousel>
         )
     }
