@@ -1,10 +1,26 @@
 import React, { Component } from 'react';
-//import {  } from 'reactstrap';
+import Carousel from 'react-elastic-carousel';
+import images from './img'
 import '../../styles.css';
 
 class Home extends Component {
+    state = {
+        items: [
+            { id: 1, src: './img/aztec-hoop.jpg', title: "Aztec Hoops"},
+            { id: 2, title: 'item #2' },
+            { id: 3, title: 'item #3' },
+            { id: 4, title: 'item #4' },
+            { id: 5, title: 'item #5' }
+        ]
+    }
+
     render() {
-        return <div className="yellow">home</div>
+        const { items } = this.state;
+        return (
+            <Carousel>
+                { items.map(({id, src, title, description}) => <img key={id} src={src} title={title} alt={description} />)}
+            </Carousel>
+        )
     }
 }
 
